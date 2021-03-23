@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta property="og:type" content="website" />
+    <meta id="og-title" property="og:title" content="" />
+    <meta id="og-desc" property="og:description" content="" />
+    <meta id="og-image" property="og:image" content="" />
+    <meta id="og-image-alt" property="og:image:alt" content="" />
+    <meta id="og-url" property="og:url" content="" />
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ogTitleMeta = document.getElementById('og-title');
+        let ogDescMeta = document.getElementById('og-desc');
+        let ogImageMeta = document.getElementById('og-image');
+        let ogImageAltMeta = document.getElementById('og-image-alt');
+        let ogUrlMeta = document.getElementById('og-url');
+
+        let title = "My Github is beautiful.";
+        let description = "My Github is beautiful cause it's clear!";
+
+        ogTitleMeta.setAttribute('content', title);
+        ogDescMeta.setAttribute('content', description);
+        ogImageMeta.setAttribute('content', "https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-718/normal/b45d5744-b7c0-11ea-80ca-005056bbdc38;sP;twebp/porsche-normal.webp");
+        ogImageAltMeta.setAttribute('content', title);
+        ogUrlMeta.setAttribute('content', document.location);
+    </script>
+</body>
+</html>
